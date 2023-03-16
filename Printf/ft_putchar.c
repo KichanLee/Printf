@@ -3,21 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kichan <kichan@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kichlee <kichlee@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 21:23:43 by kichan            #+#    #+#             */
-/*   Updated: 2023/03/12 21:44:35 by kichan           ###   ########.fr       */
+/*   Updated: 2023/03/13 09:19:51 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putchar(int num)
+int	ft_putchar(int num)
 {
-    char    ch;
+	char	ch;
 
-    ch = (char) num;
-    write(1, &ch, 1);
-
-    return (1);
+	ch = (char) num;
+	write(1, &ch, 1);
+	return (1);
 }

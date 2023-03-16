@@ -12,15 +12,13 @@ M_SRCS = ft_hexalow.c \
 	ft_putchar.c \
 	ft_putnbr.c \
 	ft_putunsigned.c \
+	ft_putstr.c
 
 M_OBJS = $(M_SRCS:%.c=%.o)
 
 
-ifdef WITH_BONUS
-	OBJS = $(M_OBJS) $(B_OBJS)
-else
-	OBJS = $(M_OBJS)
-endif
+OBJS = $(M_OBJS)
+
 
 all: $(NAME)
 
@@ -31,7 +29,7 @@ $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -c $^ -I .
 
 clean:
-	$(RM) $(M_OBJS) $(B_OBJS)
+	$(RM) $(M_OBJS) 
 
 fclean: clean
 	$(RM) $(NAME)

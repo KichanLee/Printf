@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kichan <kichan@student.42.fr>              +#+  +:+       +#+        */
+/*   By: kichlee <kichlee@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 21:07:35 by kichan            #+#    #+#             */
-/*   Updated: 2023/03/12 21:40:37 by kichan           ###   ########.fr       */
+/*   Updated: 2023/03/13 10:30:59 by kichlee          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ int	ft_putnbr(int num)
 	if (num > 9)
 	{
 		i += ft_putnbr(num / 10);
-		++i;
 		ch = '0' + num % 10;
 	}
 	else
